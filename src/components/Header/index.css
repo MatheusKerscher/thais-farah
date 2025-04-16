@@ -1,0 +1,14 @@
+#banner-container {
+    background-image: url(../../assets/images/banner-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) { 
+    #banner-container {
+        background-image: url(../../assets/images/banner-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}

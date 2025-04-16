@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #b19c97;
+    --color-secondary: #ece9e4;
+    --color-tertiary: #45484d;
+
+    --animate-slide-right: slideInRight 1s both;
+
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(100%);
+            visibility: visible;
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
