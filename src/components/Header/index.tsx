@@ -58,7 +58,7 @@ const Header = () => {
     setIsOpen(!isOpen);
 
     if (isOpen) {
-      //Executado when menu close
+      //Execute when menu close
       listRef.current?.classList.add("hidden");
       listRef.current?.classList.remove(
         "flex",
@@ -70,6 +70,7 @@ const Header = () => {
         "h-screen",
         "flex-col",
         "gap-8",
+        "bg-secondary",
         "bg-white",
         "text-primary"
       );
@@ -89,13 +90,14 @@ const Header = () => {
       navRef.current?.classList.remove(
         "justify-between",
         "bg-transparent",
+        "bg-white",
         "text-white"
       );
       navRef.current?.classList.add(
         "h-screen",
         "flex-col",
         "gap-8",
-        "bg-white",
+        "bg-secondary",
         "text-primary"
       );
 
@@ -103,6 +105,22 @@ const Header = () => {
       listRef.current?.classList.add("flex", "flex-col", "animate-slide-right");
     }
   };
+
+  function scrollToElement(elementId: string) {
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      const offset = 75;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  }
 
   return (
     <header className="w-full h-screen">
@@ -112,8 +130,10 @@ const Header = () => {
         ref={navRef}
       >
         <div className="flex justify-between w-full lg:w-auto">
-          <div className="flex flex-col">
-            <h1 className="font-medium">Dra Thaís Farah</h1>
+          <div className="flex flex-col select-none">
+            <h1 className="font-bold font-parisienne text-lg">
+              Dra Thaís Farah
+            </h1>
 
             <span className="text-xs">CRM 45740 | RQE 34216</span>
           </div>
@@ -150,30 +170,42 @@ const Header = () => {
           ref={listRef}
           onClick={handleClick}
         >
-          <li className="transition-all duration-150 hover:font-medium">
-            <a href="#about-me">Sobre mim</a>
+          <li
+            className="transition-all duration-150 hover:font-bold hover:cursor-pointer"
+            onClick={() => scrollToElement("about-me")}
+          >
+            Sobre mim
           </li>
 
-          <li className="transition-all duration-150 hover:font-medium">
-            <a href="#academic-background">Formação acadêmica</a>
+          <li
+            className="transition-all duration-150 hover:font-bold hover:cursor-pointer"
+            onClick={() => scrollToElement("academic-background")}
+          >
+            Formação acadêmica
           </li>
 
-          <li className="transition-all duration-150 hover:font-medium">
-            <a href="#my-treatments">Procedimentos</a>
+          <li
+            className="transition-all duration-150 hover:font-bold hover:cursor-pointer"
+            onClick={() => scrollToElement("my-treatments")}
+          >
+            Procedimentos
           </li>
 
-          <li className="transition-all duration-150 hover:font-medium">
-            <a href="#comments">Depoimentos</a>
-          </li>
+          {/* <li className="transition-all duration-150 hover:font-bold hover:cursor-pointer" onClick={() => scrollToElement("comments")}>
+            Depoimentos
+          </li> */}
 
-          <li className="transition-all duration-150 hover:font-medium">
-            <a href="#contact">Contato</a>
+          <li
+            className="transition-all duration-150 hover:font-bold hover:cursor-pointer"
+            onClick={() => scrollToElement("contact")}
+          >
+            Contato
           </li>
 
           <div className="flex justify-center gap-3 lg:hidden mt-5">
             <li>
               <a
-                href="https://www.instagram.com/dramayaradealmeidap?igsh=MWliMDAzaWJzeXJ6cA=="
+                href="https://www.instagram.com/dra.thaisfarah?igsh=MXBvanM5aW1kcmd5Zw=="
                 target="_blank"
                 rel="noopner noreferrer"
               >
@@ -183,7 +215,7 @@ const Header = () => {
 
             <li>
               <a
-                href="https://wa.me/5541984827145?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra%20Mayara%20de%20Almeida%20Pereira."
+                href="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
                 target="_blank"
                 rel="noopner noreferrer"
               >
@@ -205,7 +237,10 @@ const Header = () => {
             <span>Cirurgia ginecológica e íntima</span>
           </h2>
 
-          <ButtonWhatsApp link="a" text="Agende sua consulta" />
+          <ButtonWhatsApp
+            link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+            text="Agende sua consulta"
+          />
         </div>
       </section>
     </header>

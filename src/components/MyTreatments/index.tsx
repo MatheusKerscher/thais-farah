@@ -7,12 +7,12 @@ const MyTreatments = () => {
 
       <div className="flex justify-center gap-6 flex-wrap mt-8">
           {myTreatmentList.map((treatment) => (
-            <div key={treatment.title} className="shadow-gray-400 shadow-md rounded-md p-3">
-              <h2 className="font-medium text-primary mb-3">{treatment.title}</h2>
+            <div key={treatment.title} className="shadow-gray-400 shadow-md rounded-md p-3 flex-1">
+              <h2 className="font-medium text-primary mb-3 sm:text-lg md:text-xl text-center sm:text-start">{treatment.title}</h2>
 
-              <ul className="list-disc ps-5 text-tertiary">
+              <ul className="list-disc ps-5">
                 {treatment.description.map((text) => (
-                  <li key={text} className="text-sm pt-1">{text}</li>
+                  <li key={text} className="text-sm md:text-base pt-1 text-tertiary">{text}</li>
                 ))}
               </ul>
             </div>
