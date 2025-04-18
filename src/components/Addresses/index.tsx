@@ -4,7 +4,7 @@ import addressList from "./addresses.data";
 const Addresses = () => {
   return (
     <section className="px-6 md:px-15 py-6">
-      <RevealOnScroll direction="left">
+      <RevealOnScroll direction="up">
         <h3 className="font-light text-2xl md:text-3xl text-primary uppercase text-center">
           Meus locais de atendimento
         </h3>
@@ -16,19 +16,19 @@ const Addresses = () => {
             key={address.title}
             className="p-4 flex flex-col items-center justify-between gap-4 shadow-xl border-1 border-gray-100 rounded-lg w-full md:w-5/12"
           >
-            <RevealOnScroll direction="left">
+            <RevealOnScroll direction="up">
               <h4 className="font-light text-xl md:text-2xl text-center">
                 {address.title}
               </h4>
             </RevealOnScroll>
 
-            <RevealOnScroll direction="left">
+            <RevealOnScroll direction="up">
               <span className="text-sm md:text-base block text-center">
                 <span className="font-bold">Endereço:</span> {address.address}
               </span>
             </RevealOnScroll>
 
-            <RevealOnScroll direction="left">
+            <RevealOnScroll direction="up">
               <div className="flex justify-center gap-4">
                 <a
                   className="font-bold transition-all duration-200 hover:underline text-sm md:text-base"
