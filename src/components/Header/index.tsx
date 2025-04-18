@@ -136,7 +136,7 @@ const Header = () => {
               Dra Thaís Farah
             </h1>
 
-            <span className="text-xs">CRM 45740 | RQE 34.216</span>
+            <span className="text-xs">CRM 45740 | RQE 34216</span>
           </div>
 
           <button
@@ -234,7 +234,7 @@ const Header = () => {
         id="banner-container"
         className="h-screen px-6 md:px-14 flex justify-center items-center md:justify-start"
       >
-        <div className="w-full md:w-6/12 flex flex-col items-center md:items-start">
+        <div className="w-full md:w-7/12 flex flex-col items-center md:items-start">
           <RevealOnScroll direction="left">
             <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl items-center md:items-start">
               <span>Ginecologia,</span>
@@ -242,10 +242,20 @@ const Header = () => {
               <span>Cirurgia ginecológica e íntima</span>
             </h2>
 
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center flex-wrap gap-5 md:justify-start">
               <ButtonWhatsApp
-                link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-                text="Agende sua consulta"
+                link="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+                text="Atendimento particular"
+              />
+
+              <ButtonWhatsApp
+                link="https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+                text="Atendimento convênio"
+              />
+
+              <ButtonWhatsApp
+                link="https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+                text="Consultório São Mateus do Sul"
               />
             </div>
           </RevealOnScroll>
