@@ -58,7 +58,7 @@ const Header = () => {
     setIsOpen(!isOpen);
 
     if (isOpen) {
-      //Executado quando fecha o menu
+      //Executado when menu close
       listRef.current?.classList.add("hidden");
       listRef.current?.classList.remove(
         "flex",
@@ -83,7 +83,7 @@ const Header = () => {
 
       applyNavBackground();
     } else {
-      //Executado quando abre o menu
+      //Execute when menu open
       document.body.classList.add("overflow-hidden");
 
       navRef.current?.classList.remove(
