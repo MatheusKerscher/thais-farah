@@ -20,11 +20,15 @@ const Addresses = () => {
               <h4 className="font-light text-xl md:text-2xl text-center">
                 {address.title}
               </h4>
+            </RevealOnScroll>
 
+            <RevealOnScroll direction="left">
               <span className="text-sm md:text-base block text-center">
                 <span className="font-bold">Endereço:</span> {address.address}
               </span>
+            </RevealOnScroll>
 
+            <RevealOnScroll direction="left">
               <div className="flex justify-center gap-4">
                 <a
                   className="font-bold transition-all duration-200 hover:underline text-sm md:text-base"
