@@ -1,1 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Parisienne&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+    --default-font-family: "Manrope", sans-serif;
+    --font-parisienne: "Parisienne",  sans-serif;
+    --color-primary: #b19c97;
+    --color-secondary: #ece9e4;
+    --color-tertiary: #45484d;
+
+    --animate-slide-right: slideInRight 1s both;
+
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(100%);
+            visibility: visible;
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+@layer utilities {
+    .image-shadow {
+        box-shadow:
+            -18px 18px 0px -4px rgba(69, 72, 77, 0.75),
+            18px 18px 0px -4px rgba(0, 0, 0, 0),
+            18px -18px 0px -4px rgba(0, 0, 0, 0),
+            -18px -18px 0px -4px rgba(0, 0, 0, 0);
+    }
+
+    .academic-background::before {
+        content: "";
+        position: absolute;
+        left: -22px;
+        top: 48%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        background-color: var(--color-secondary);
+        border-radius: 50% 0 50% 0;
+    }
+}
