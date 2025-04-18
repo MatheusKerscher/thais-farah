@@ -1,0 +1,22 @@
+:root {
+  --swiper-navigation-color: var(--color-primary);
+}
+
+.swiper {
+  width: 100%;
+  max-width: var(--container-lg);
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  padding: calc(var(--spacing) * 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}

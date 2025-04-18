@@ -1,5 +1,6 @@
 import aboutMe from "../../assets/images/about-me.jpg";
 import ButtonWhatsApp from "../ButtonWhatsApp";
+import RevealOnScroll from "../RevealOnScroll";
 
 const About = () => {
   return (
@@ -23,70 +24,84 @@ const About = () => {
 
         <h2 className="text-xl md:text-3xl">Dra. Thaís Farah Gonçalves </h2>
 
-        <p className="text-justify text-sm md:text-base">
-          Sou médica formada pela Universidade Positivo, com residência médica
-          em Ginecologia e Obstetrícia pelo Hospital do Trabalhador (HT - PR).
-          Me especializei em Uroginecologia no Hospital Universitário Evangélico
-          Mackenzie (HUEM - PR) e atualmente estou em constante aperfeiçoamento,
-          realizando fellow em cirurgia ginecológica minimamente invasiva
-          (videolaparoscopica).
-        </p>
+        <RevealOnScroll direction="up">
+          <p className="text-justify text-sm md:text-base">
+            Sou médica formada pela Universidade Positivo, com residência médica
+            em Ginecologia e Obstetrícia pelo Hospital do Trabalhador (HT - PR).
+            Me especializei em Uroginecologia no Hospital Universitário
+            Evangélico Mackenzie (HUEM - PR) e atualmente estou em constante
+            aperfeiçoamento, realizando fellow em cirurgia ginecológica
+            minimamente invasiva (videolaparoscopica).
+          </p>
+        </RevealOnScroll>
 
-        <p className="text-justify text-sm md:text-base">
-          Minha atuação vai além da técnica: acredito em um cuidado humanizado,
-          baseado na escuta ativa e na decisão compartilhada com a paciente.
-          Cada mulher é única, e o tratamento precisa refletir essa
-          individualidade, respeitando suas escolhas, histórias e objetivos.
-        </p>
+        <RevealOnScroll direction="up">
+          <p className="text-justify text-sm md:text-base">
+            Minha atuação vai além da técnica: acredito em um cuidado
+            humanizado, baseado na escuta ativa e na decisão compartilhada com a
+            paciente. Cada mulher é única, e o tratamento precisa refletir essa
+            individualidade, respeitando suas escolhas, histórias e objetivos.
+          </p>
+        </RevealOnScroll>
 
-        <p className="text-justify text-sm md:text-base">
-          Na minha prática clínica e cirúrgica, atendo tanto casos de maior
-          complexidade quanto demandas do dia a dia da saúde da mulher. Trabalho
-          com carinho e dedicação nas seguintes áreas:
-        </p>
+        <RevealOnScroll direction="up">
+          <p className="text-justify text-sm md:text-base">
+            Na minha prática clínica e cirúrgica, atendo tanto casos de maior
+            complexidade quanto demandas do dia a dia da saúde da mulher.
+            Trabalho com carinho e dedicação nas seguintes áreas:
+          </p>
+        </RevealOnScroll>
 
-        <ul className="ms-8 list-disc text-sm md:text-base">
-          <li>
-            Cirurgias ginecológicas minimamente invasivas (menos dor,
-            recuperação mais rápida);
-          </li>
+        <RevealOnScroll direction="up">
+          <ul className="ms-8 list-disc text-sm md:text-base">
+            <li>
+              Cirurgias ginecológicas minimamente invasivas (menos dor,
+              recuperação mais rápida);
+            </li>
 
-          <li className="my-2">
-            Uroginecologia (incontinência urinária, infecções de repetição,
-            bexiga hiperativa, cirurgias vaginais);
-          </li>
+            <li className="my-2">
+              Uroginecologia (incontinência urinária, infecções de repetição,
+              bexiga hiperativa, cirurgias vaginais);
+            </li>
 
-          <li className="my-2">
-            Anticoncepção personalizada (orientação individual para escolha do
-            melhor método);
-          </li>
+            <li className="my-2">
+              Anticoncepção personalizada (orientação individual para escolha do
+              melhor método);
+            </li>
 
-          <li>
-            Menopausa e reposição hormonal (acolhendo essa fase com cuidado,
-            ciência e empatia).
-          </li>
-        </ul>
+            <li>
+              Menopausa e reposição hormonal (acolhendo essa fase com cuidado,
+              ciência e empatia).
+            </li>
+          </ul>
+        </RevealOnScroll>
 
-        <p className="text-justify text-sm md:text-base">
-          O cuidado com a mulher exige conhecimento, sensibilidade e respeito
-          pela sua jornada — e é com esse propósito que construo minha prática
-          todos os dias.
-        </p>
+        <RevealOnScroll direction="up">
+          <p className="text-justify text-sm md:text-base">
+            O cuidado com a mulher exige conhecimento, sensibilidade e respeito
+            pela sua jornada — e é com esse propósito que construo minha prática
+            todos os dias.
+          </p>
+        </RevealOnScroll>
 
-        <p className="text-justify text-sm md:text-base">
-          <strong>
-            Vamos cuidar de você com leveza, informação e segurança
-          </strong>
-          .
-        </p>
+        <RevealOnScroll direction="up">
+          <p className="text-justify text-sm md:text-base">
+            <strong>
+              Vamos cuidar de você com leveza, informação e segurança
+            </strong>
+            .
+          </p>
+        </RevealOnScroll>
 
-        <div className="flex justify-center md:justify-start">
-          <ButtonWhatsApp
-            link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-            text="Agende sua consulta"
-            styleClass="border-0 bg-tertiary text-white"
-          />
-        </div>
+        <RevealOnScroll direction="up">
+          <div className="flex justify-center md:justify-start">
+            <ButtonWhatsApp
+              link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+              text="Agende sua consulta"
+              styleClass="border-0 bg-tertiary text-white"
+            />
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   );
