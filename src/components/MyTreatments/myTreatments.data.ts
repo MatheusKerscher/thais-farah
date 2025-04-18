@@ -8,6 +8,7 @@ const myTreatmentList: Treatment[] = [
     title: "Ginecologia",
     description: [
       "anticoncepção",
+      " inserção de DIU com e sem sedação",
       "⁠climatério e menopausa ",
       "⁠miomas e adenomiose",
       "⁠sangramento uterino anormal",
@@ -16,10 +17,10 @@ const myTreatmentList: Treatment[] = [
   {
     title: "Uroginecologia",
     description: [
-      "anticoncepção",
-      "⁠climatério e menopausa ",
-      "⁠miomas e adenomiose",
-      "⁠sangramento uterino anormal",
+      "incontinência urinária",
+      "⁠disfunções miccionals",
+      "infecção urinária de repetição",
+      "prolapsos de paredes vaginais e órgãos pélvicos",
     ],
   },
   {
@@ -32,4 +33,4 @@ const myTreatmentList: Treatment[] = [
   },
 ];
 
-export default myTreatmentList
+export default myTreatmentList;

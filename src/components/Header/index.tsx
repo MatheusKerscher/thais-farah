@@ -135,7 +135,7 @@ const Header = () => {
               Dra Thaís Farah
             </h1>
 
-            <span className="text-xs">CRM 45740 | RQE 34216</span>
+            <span className="text-xs">CRM 45740 | RQE 34.216</span>
           </div>
 
           <button
