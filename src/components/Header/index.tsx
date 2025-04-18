@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import ButtonWhatsApp from "../ButtonWhatsApp";
 
 import "./index.css";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import RevealOnScroll from "../RevealOnScroll";
 
 const Header = () => {
@@ -217,7 +217,7 @@ const Header = () => {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a
                 href="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
                 target="_blank"
@@ -225,7 +225,7 @@ const Header = () => {
               >
                 <FaWhatsapp size={22} />
               </a>
-            </li>
+            </li> */}
           </div>
         </ul>
       </nav>

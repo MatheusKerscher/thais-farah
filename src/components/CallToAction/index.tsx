@@ -1,4 +1,3 @@
-import ButtonWhatsApp from "../ButtonWhatsApp";
 import RevealOnScroll from "../RevealOnScroll";
 import "./index.css";
 
@@ -23,14 +22,14 @@ const CallToAction = () => {
           </p>
         </RevealOnScroll>
 
-        <RevealOnScroll direction="down">
+        {/* <RevealOnScroll direction="down">
           <div className="flex justify-center md:justify-start">
             <ButtonWhatsApp
               link="https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
               text="Entrar em contato"
             />
           </div>
-        </RevealOnScroll>
+        </RevealOnScroll> */}
       </div>
     </section>
   );
