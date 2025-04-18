@@ -21,7 +21,7 @@ const addressList: Address[] = [
     title: "Consultório São Mateus do Sul", 
     address: "R. Dom Pedro II, 201 - Centro - São Mateus do Sul - PR, 83900-120",
     link: "https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!",
-    phoneLink: "phone:+554235322442"
+    phoneLink: "tel:+554235322442"
   }
 ]
 

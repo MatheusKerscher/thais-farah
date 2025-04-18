@@ -4,6 +4,7 @@ import ButtonWhatsApp from "../ButtonWhatsApp";
 
 import "./index.css";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import RevealOnScroll from "../RevealOnScroll";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -191,9 +192,12 @@ const Header = () => {
             Procedimentos
           </li>
 
-          {/* <li className="transition-all duration-150 hover:font-bold hover:cursor-pointer" onClick={() => scrollToElement("comments")}>
+          <li
+            className="transition-all duration-150 hover:font-bold hover:cursor-pointer"
+            onClick={() => scrollToElement("comments")}
+          >
             Depoimentos
-          </li> */}
+          </li>
 
           <li
             className="transition-all duration-150 hover:font-bold hover:cursor-pointer"
@@ -231,16 +235,18 @@ const Header = () => {
         className="h-screen px-6 md:px-14 flex justify-center items-center md:justify-start"
       >
         <div className="w-full md:w-6/12 flex flex-col not-md:items-center">
-          <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl not-md:items-center">
-            <span>Ginecologia,</span>
-            <span>Uroginecologia e</span>
-            <span>Cirurgia ginecológica e íntima</span>
-          </h2>
+          <RevealOnScroll direction="left">
+            <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl not-md:items-center">
+              <span>Ginecologia,</span>
+              <span>Uroginecologia e</span>
+              <span>Cirurgia ginecológica e íntima</span>
+            </h2>
 
-          <ButtonWhatsApp
-            link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-            text="Agende sua consulta"
-          />
+            <ButtonWhatsApp
+              link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+              text="Agende sua consulta"
+            />
+          </RevealOnScroll>
         </div>
       </section>
     </header>
