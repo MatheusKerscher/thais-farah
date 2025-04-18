@@ -234,18 +234,20 @@ const Header = () => {
         id="banner-container"
         className="h-screen px-6 md:px-14 flex justify-center items-center md:justify-start"
       >
-        <div className="w-full md:w-6/12 flex flex-col not-md:items-center">
+        <div className="w-full md:w-6/12 flex flex-col items-center md:items-start">
           <RevealOnScroll direction="left">
-            <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl not-md:items-center">
+            <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl items-center md:items-start">
               <span>Ginecologia,</span>
               <span>Uroginecologia e</span>
               <span>Cirurgia ginecológica e íntima</span>
             </h2>
 
-            <ButtonWhatsApp
-              link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-              text="Agende sua consulta"
-            />
+            <div className="flex justify-center md:justify-start">
+              <ButtonWhatsApp
+                link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+                text="Agende sua consulta"
+              />
+            </div>
           </RevealOnScroll>
         </div>
       </section>
