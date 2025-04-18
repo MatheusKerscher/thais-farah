@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 768px) {
     #banner-container {
         background-image: url(../../assets/images/banner-mobile.jpg);
         background-size: cover;
