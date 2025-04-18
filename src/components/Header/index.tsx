@@ -238,7 +238,7 @@ const Header = () => {
           <RevealOnScroll direction="left">
             <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl items-center md:items-start">
               <span>Ginecologia,</span>
-              <span>Uroginecologia e</span>
+              <span>Uroginecologia,</span>
               <span>Cirurgia ginecológica e íntima</span>
             </h2>
 
