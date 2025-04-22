@@ -245,17 +245,17 @@ const Header = () => {
             <div className="flex justify-center flex-wrap gap-5 md:justify-start">
               <ButtonWhatsApp
                 link="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-                text="Atendimento particular"
+                text="Atendimento particular em Curitiba"
               />
 
               <ButtonWhatsApp
                 link="https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-                text="Atendimento convênio"
+                text="Atendimento convênio em Curitiba"
               />
 
               <ButtonWhatsApp
                 link="https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-                text="Consultório São Mateus do Sul"
+                text="Atendimento em São Mateus do Sul"
               />
             </div>
           </RevealOnScroll>
