@@ -3,9 +3,9 @@ import addressList from "./addresses.data";
 
 const Addresses = () => {
   return (
-    <section className="px-6 md:px-15 py-6">
+    <section className="px-6 md:px-15 py-6 bg-primary">
       <RevealOnScroll direction="up">
-        <h3 className="font-light text-2xl md:text-3xl text-primary uppercase text-center">
+        <h3 className="font-light text-2xl md:text-3xl text-secondary uppercase text-center">
           Meus locais de atendimento
         </h3>
       </RevealOnScroll>
@@ -14,10 +14,10 @@ const Addresses = () => {
         {addressList.map((address) => (
           <div
             key={address.title}
-            className="p-4 flex flex-col items-center justify-between gap-4 shadow-xl border-1 border-gray-100 rounded-lg w-full md:w-5/12"
+            className="p-4 flex flex-col items-center justify-between gap-4 shadow-xl bg-white rounded-lg w-full md:w-5/12"
           >
             <RevealOnScroll direction="up">
-              <h4 className="font-light text-xl md:text-2xl text-center">
+              <h4 className="font-light text-xl text-center">
                 {address.title}
               </h4>
             </RevealOnScroll>

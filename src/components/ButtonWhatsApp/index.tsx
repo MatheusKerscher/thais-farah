@@ -6,7 +6,7 @@ type ButtonWhatsAppProps = {
   styleClass?: string
 };
 
-const ButtonWhatsApp = ({ link, text, styleClass = "border-1 border-white text-white" }: ButtonWhatsAppProps) => {
+const ButtonWhatsApp = ({ link, text, styleClass = "border-1 border-primary text-primary" }: ButtonWhatsAppProps) => {
   return (
     <a 
       href={link} 

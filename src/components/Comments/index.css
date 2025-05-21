@@ -1,5 +1,5 @@
 :root {
-  --swiper-navigation-color: var(--color-primary);
+  --swiper-navigation-color: var(--color-secondary);
 }
 
 .swiper {
@@ -9,7 +9,7 @@
 
 .swiper-slide {
   text-align: center;
-  background: #fff;
+  background: var(--color-primary);
   padding: calc(var(--spacing) * 5);
   display: flex;
   justify-content: center;
