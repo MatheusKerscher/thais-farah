@@ -94,10 +94,22 @@ const About = () => {
         </RevealOnScroll>
 
         <RevealOnScroll direction="up">
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center flex-wrap gap-3 md:justify-start">
             <ButtonWhatsApp
-              link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-              text="Agende sua consulta"
+              link="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+              text="Atendimento particular em Curitiba"
+              styleClass="border-0 bg-tertiary text-white"
+            />
+
+            <ButtonWhatsApp
+              link="https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+              text="Atendimento convênio em Curitiba"
+              styleClass="border-0 bg-tertiary text-white"
+            />
+
+            <ButtonWhatsApp
+              link="https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+              text="Atendimento em São Mateus do Sul"
               styleClass="border-0 bg-tertiary text-white"
             />
           </div>

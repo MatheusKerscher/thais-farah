@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import ButtonWhatsApp from "../ButtonWhatsApp";
 
 import "./index.css";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import RevealOnScroll from "../RevealOnScroll";
 
 const Header = () => {
@@ -136,7 +136,7 @@ const Header = () => {
               Dra Thaís Farah
             </h1>
 
-            <span className="text-xs">CRM 45740 | RQE 34.216</span>
+            <span className="text-xs">CRM 45740 | RQE 34216</span>
           </div>
 
           <button
@@ -217,7 +217,7 @@ const Header = () => {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a
                 href="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
                 target="_blank"
@@ -225,7 +225,7 @@ const Header = () => {
               >
                 <FaWhatsapp size={22} />
               </a>
-            </li>
+            </li> */}
           </div>
         </ul>
       </nav>
@@ -234,18 +234,30 @@ const Header = () => {
         id="banner-container"
         className="h-screen px-6 md:px-14 flex justify-center items-center md:justify-start"
       >
-        <div className="w-full md:w-6/12 flex flex-col not-md:items-center">
+        <div className="w-full md:w-7/12 flex flex-col items-center md:items-start">
           <RevealOnScroll direction="left">
-            <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl not-md:items-center">
+            <h2 className="flex flex-col text-lg mb-5 text-white font-medium md:text-2xl items-center md:items-start">
               <span>Ginecologia,</span>
-              <span>Uroginecologia e</span>
+              <span>Uroginecologia,</span>
               <span>Cirurgia ginecológica e íntima</span>
             </h2>
 
-            <ButtonWhatsApp
-              link="https://wa.me/554198970801?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-              text="Agende sua consulta"
-            />
+            <div className="flex justify-center flex-wrap gap-5 md:justify-start">
+              <ButtonWhatsApp
+                link="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+                text="Atendimento particular em Curitiba"
+              />
+
+              <ButtonWhatsApp
+                link="https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+                text="Atendimento convênio em Curitiba"
+              />
+
+              <ButtonWhatsApp
+                link="https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+                text="Atendimento em São Mateus do Sul"
+              />
+            </div>
           </RevealOnScroll>
         </div>
       </section>
