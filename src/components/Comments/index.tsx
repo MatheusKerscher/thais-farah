@@ -37,14 +37,14 @@ const Comments = () => {
           >
             {commentList.map((comment) => (
               <SwiperSlide key={comment.author}>
-                <div className="w-10/12 flex flex-col text-tertiary shadow-lg bg-white rounded-lg p-5">
-                  <span className="italic text-justify">
+                <div className="w-10/12 flex flex-col text-white bg-primary py-4">
+                  <span className="italic text-justify border-t-1 border-white pt-3">
                     "{comment.description}"
                   </span>
 
-                  <div className="flex flex-col items-end mt-14 text-md font-light">
+                  <div className="flex flex-col items-end mt-14 text-md font-light border-y-1 py-2 border-white">
                     <span>{comment.author}</span>
-                    <span>{comment.source}</span>
+                    <span className="text-xs">{comment.source}</span>
                   </div>
                 </div>
               </SwiperSlide>

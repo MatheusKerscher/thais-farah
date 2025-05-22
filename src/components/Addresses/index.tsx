@@ -3,18 +3,18 @@ import addressList from "./addresses.data";
 
 const Addresses = () => {
   return (
-    <section className="px-6 md:px-15 py-6 bg-primary">
+    <section className="px-6 md:px-15 py-6 bg-white">
       <RevealOnScroll direction="up">
-        <h3 className="font-light text-2xl md:text-3xl text-secondary uppercase text-center">
+        <h3 className="font-light text-2xl md:text-3xl text-primary uppercase text-center">
           Meus locais de atendimento
         </h3>
       </RevealOnScroll>
 
-      <div className="flex flex-wrap gap-8 justify-center mt-10 text-tertiary">
+      <div className="flex flex-wrap gap-8 justify-center mt-10 text-secondary">
         {addressList.map((address) => (
           <div
             key={address.title}
-            className="p-4 flex flex-col items-center justify-between gap-4 shadow-xl bg-white rounded-lg w-full md:w-5/12"
+            className="p-4 flex flex-col items-center justify-between gap-4 shadow-lg bg-primary rounded-2xl w-full md:w-5/12"
           >
             <RevealOnScroll direction="up">
               <h4 className="font-light text-xl text-center">

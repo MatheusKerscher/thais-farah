@@ -17,7 +17,7 @@ const CallToAction = () => {
 
         <RevealOnScroll direction="down">
           <p className="text-sm md:text-base text-primary text-justify">
-            Na minha consulta, toda a atenção está voltada para você. Vamos
+            Na minha consulta, toda a atenção está voltada para você. Vou
             ouvir suas queixas com cuidado, entender o que está acontecendo e
             definir o melhor caminho para o tratamento.
           </p>

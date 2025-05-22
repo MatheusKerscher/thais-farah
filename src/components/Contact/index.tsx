@@ -12,10 +12,10 @@ const Contact = () => {
         </h3>
       </RevealOnScroll>
 
-      <div className="mt-8 flex flex-wrap flex-col sm:flex-row gap-8 justify-center text-primary divide-primary divide-y-1 sm:divide-x-1 sm:divide-y-0">
+      <div className="mt-8 flex flex-wrap flex-col sm:flex-row gap-8 justify-center text-secondary">
         <RevealOnScroll direction="up">
           <a
-            className="flex flex-col gap-2 items-center pb-6 sm:pb-0 sm:pe-6"
+            className="flex flex-col gap-2 items-center p-4 bg-primary rounded-2xl shadow-lg"
             href="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
             target="_blank"
             rel="noopner noreferrer"
@@ -31,7 +31,7 @@ const Contact = () => {
 
         <RevealOnScroll direction="up">
           <a
-            className="flex flex-col gap-2 items-center pb-6 sm:pb-0 sm:pe-6"
+            className="flex flex-col gap-2 items-center p-4 bg-primary rounded-2xl shadow-lg"
             href="https://www.instagram.com/dra.thaisfarah?igsh=MXBvanM5aW1kcmd5Zw=="
             target="_blank"
             rel="noopner noreferrer"
@@ -47,7 +47,7 @@ const Contact = () => {
 
         <RevealOnScroll direction="up">
           <a
-            className="flex flex-col gap-2 items-center pb-6 sm:pb-0 sm:pe-6"
+            className="flex flex-col gap-2 items-center p-4 bg-primary rounded-2xl shadow-lg"
             href="https://www.doctoralia.com.br/thais-farah-lundgren/ginecologista/curitiba"
             target="_blank"
             rel="noopner noreferrer"
@@ -67,7 +67,7 @@ const Contact = () => {
 
         <RevealOnScroll direction="up">
           <a
-            className="flex flex-col gap-2 items-center pb-6 sm:pb-0 sm:pe-6"
+            className="flex flex-col gap-2 items-center p-4 bg-primary rounded-2xl shadow-lg"
             href="mailto:thais@clinicayoni.com.br"
             target="_blank"
             rel="noopner noreferrer"

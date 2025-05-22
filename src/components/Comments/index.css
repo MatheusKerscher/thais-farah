@@ -1,5 +1,6 @@
 :root {
   --swiper-navigation-color: var(--color-secondary);
+  --swiper-navigation-size: 28px;
 }
 
 .swiper {
