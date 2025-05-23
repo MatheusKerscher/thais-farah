@@ -5,7 +5,7 @@ import banner from "../../assets/images/cta-banner.jpg"
 
 const CallToAction = () => {
   return (
-    <section className="px-6 md:px-15 md:pe-0 flex flex-col md:flex-row justify-center md:justify-between">
+    <section className="px-6 md:px-15 md:pe-0 pb-12 flex flex-col md:flex-row justify-center md:justify-between bg-secondary">
       <div
         className="w-full max-w-[560px] bg-no-repeat bg-center flex flex-col justify-center gap-4 p-4 rounded-lg"
       >

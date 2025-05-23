@@ -10,7 +10,7 @@ import RevealOnScroll from "../RevealOnScroll";
 
 const Comments = () => {
   return (
-    <section id="comments" className="px-1 md:px-15 mt-10 bg-primary py-5">
+    <section id="comments" className="px-1 md:px-15 pt-5 bg-primary py-5">
       <RevealOnScroll direction="down">
         <h3 className="font-light text-2xl md:text-3xl text-secondary uppercase text-center">
           Depoimentos

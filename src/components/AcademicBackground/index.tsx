@@ -4,7 +4,7 @@ const AcademicBackground = () => {
   return (
     <section
       id="academic-background"
-      className="bg-white flex flex-col items-center justify-center gap-6 px-6 py-12"
+      className="bg-secondary flex flex-col items-center justify-center gap-6 px-6 py-12"
     >
       <RevealOnScroll direction="down">
         <span className="block font-light text-2xl md:text-3xl text-primary uppercase text-center">

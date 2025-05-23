@@ -5,14 +5,14 @@ import RevealOnScroll from "../RevealOnScroll";
 
 const Contact = () => {
   return (
-    <section id="contact" className="px-6 md:px-15 py-8 bg-white">
+    <section id="contact" className="px-6 md:px-15 py-8 bg-secondary">
       <RevealOnScroll direction="down">
         <h3 className="font-light text-2xl md:text-3xl text-primary uppercase text-center">
           Contato
         </h3>
       </RevealOnScroll>
 
-      <div className="mt-8 flex flex-wrap flex-col sm:flex-row gap-8 justify-center text-secondary">
+      <div className="mt-8 flex flex-wrap flex-col sm:flex-row gap-8 justify-center text-white">
         <RevealOnScroll direction="up">
           <a
             className="flex flex-col gap-2 items-center p-4 bg-primary rounded-2xl shadow-lg"
