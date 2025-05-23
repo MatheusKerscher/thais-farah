@@ -120,15 +120,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 z-40 flex justify-between items-center w-full bg-transparent py-2 px-3 md:px-4 text-white transition-all duration-200"
+      className="fixed top-0 z-40 flex justify-between items-center w-full bg-transparent pt-1 px-3 md:px-4 text-white transition-all duration-200"
       id="nav"
       ref={navRef}
     >
       <div className="flex justify-between gap-3 pb-2 w-full lg:w-auto">
         <div className="flex flex-col select-none">
-          <h1 className="font-bold text-base md:text-lg">Dra Thaís Farah</h1>
+          <h1 className="text-2xl font-kapakana">Dra Thaís Farah</h1>
 
-          <span className="text-xs">CRM 45740 | RQE 34216</span>
+          <span className="text-[10px]">CRM 45740 | RQE 34216</span>
         </div>
 
         <button
@@ -162,7 +162,7 @@ const Navbar = () => {
         onClick={handleClick}
       >
         <li
-          className="transition-all duration-150 hover:font-bold hover:cursor-pointer"
+          className="transition-all duration-150 hover:font-semibold hover:cursor-pointer"
           onClick={() => scrollToElement("about-me")}
         >
           Sobre mim
