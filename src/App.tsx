@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
 
-      <main className="flex flex-col gap-12 mt-10">
+      <main className="flex flex-col">
         <About />
         <AcademicBackground />
         <MyTreatments />

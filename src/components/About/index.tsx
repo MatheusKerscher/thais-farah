@@ -1,27 +1,21 @@
-import aboutMe from "../../assets/images/about-me.jpg";
 import ButtonWhatsApp from "../ButtonWhatsApp";
 import RevealOnScroll from "../RevealOnScroll";
 
+import aboutMe from "../../assets/images/about-me.jpg";
+
 const About = () => {
   return (
-    <section
-      id="about-me"
-      className="flex gap-8 flex-col-reverse lg:flex-row px-6 md:px-15"
-    >
-      <div className="flex items-center justify-center">
+    <section className="flex gap-8 flex-col-reverse lg:flex-row p-6 md:p-15 lg:ps-0 bg-primary pb-6">
+      <div className="flex items-center justify-center lg:justify-start">
         <img
           src={aboutMe}
           alt="Dra. Thaís Farah Gonçalves sorrindo"
-          width="80%"
-          className="image-shadow"
+          width="98%"
+          className="rounded-2xl lg:rounded-s-none"
         />
       </div>
 
-      <div className="flex flex-col gap-4 text-tertiary">
-        <span className="font-bold text-xs uppercase text-primary">
-          Sobre mim
-        </span>
-
+      <div className="flex flex-col gap-4 text-secondary lg:ps-12">
         <h2 className="text-xl md:text-3xl">Dra. Thaís Farah Gonçalves </h2>
 
         <RevealOnScroll direction="up">
@@ -97,20 +91,8 @@ const About = () => {
           <div className="flex justify-center flex-wrap gap-3 md:justify-start">
             <ButtonWhatsApp
               link="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-              text="Atendimento particular em Curitiba"
-              styleClass="border-0 bg-tertiary text-white"
-            />
-
-            <ButtonWhatsApp
-              link="https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-              text="Atendimento convênio em Curitiba"
-              styleClass="border-0 bg-tertiary text-white"
-            />
-
-            <ButtonWhatsApp
-              link="https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-              text="Atendimento em São Mateus do Sul"
-              styleClass="border-0 bg-tertiary text-white"
+              text="Agendar atendimento"
+              styleClass="border-1 border-secondary text-secondary"
             />
           </div>
         </RevealOnScroll>

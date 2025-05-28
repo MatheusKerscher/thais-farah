@@ -12,16 +12,15 @@ const addressList: Address[] = [
     link: "https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
   },
   {
-    title: "Eco Medical Center",
-    address: "R. Goiás, 70 - Sala 06 - 5° andar - Água Verde, Curitiba - PR, 80620-060",
-    link: "https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
-  },
-
-  {
     title: "Consultório São Mateus do Sul", 
     address: "R. Dom Pedro II, 201 - Centro - São Mateus do Sul - PR, 83900-120",
     link: "https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!",
     phoneLink: "tel:+554235322442"
+  },
+  {
+    title: "Eco Medical Center",
+    address: "R. Goiás, 70 - Sala 06 - 5° andar - Água Verde, Curitiba - PR, 80620-060",
+    link: "https://wa.me/554131236550?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
   }
 ]
 

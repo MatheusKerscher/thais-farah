@@ -10,9 +10,9 @@ import RevealOnScroll from "../RevealOnScroll";
 
 const Comments = () => {
   return (
-    <section id="comments" className="px-6 md:px-15 mt-10">
+    <section id="comments" className="px-1 md:px-15 pt-5 bg-primary py-5">
       <RevealOnScroll direction="down">
-        <h3 className="font-light text-2xl md:text-3xl text-primary uppercase text-center">
+        <h3 className="font-light text-2xl md:text-3xl text-secondary uppercase text-center">
           Depoimentos
         </h3>
       </RevealOnScroll>
@@ -37,14 +37,14 @@ const Comments = () => {
           >
             {commentList.map((comment) => (
               <SwiperSlide key={comment.author}>
-                <div className="w-10/12 flex flex-col text-tertiary shadow-lg border-1 border-gray-100 rounded-lg p-5">
-                  <span className="italic text-justify">
+                <div className="w-10/12 flex flex-col text-white bg-primary py-4">
+                  <span className="italic text-justify border-t-1 border-white pt-3">
                     "{comment.description}"
                   </span>
 
-                  <div className="flex flex-col items-end mt-14 text-md font-light">
+                  <div className="flex flex-col items-end mt-14 text-md font-light border-y-1 py-2 border-white">
                     <span>{comment.author}</span>
-                    <span>{comment.source}</span>
+                    <span className="text-xs">{comment.source}</span>
                   </div>
                 </div>
               </SwiperSlide>
