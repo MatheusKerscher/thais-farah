@@ -26,7 +26,6 @@ const CallToAction = () => {
         <RevealOnScroll direction="down">
           <div className="flex justify-center md:justify-start">
             <ButtonWhatsApp
-              link="https://wa.me/5542998546020?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
               text="Agendar consulta"
               styleClass="border-1 border-primary text-primary"
             />
