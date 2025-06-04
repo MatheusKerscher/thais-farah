@@ -2,8 +2,12 @@ import { FaInstagram, FaRegEnvelope, FaWhatsapp } from "react-icons/fa6";
 
 import doctoraliaIcon from "../../assets/icons/icon-doctoralia.svg";
 import RevealOnScroll from "../RevealOnScroll";
+import { useContext } from "react";
+import { WhatsAppContext } from "../../context/WhatsAppContext";
 
 const Contact = () => {
+  const { whatsAppUrl } = useContext(WhatsAppContext);
+  
   return (
     <section id="contact" className="px-6 md:px-15 py-8 bg-secondary">
       <RevealOnScroll direction="down">
@@ -16,7 +20,7 @@ const Contact = () => {
         <RevealOnScroll direction="up">
           <a
             className="flex flex-col gap-2 items-center p-4 bg-primary rounded-2xl shadow-lg"
-            href="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+            href={whatsAppUrl}
             target="_blank"
             rel="noopner noreferrer"
           >

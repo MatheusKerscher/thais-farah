@@ -24,7 +24,6 @@ const Header = () => {
 
             <div className="flex justify-center flex-wrap gap-5 md:justify-start">
               <ButtonWhatsApp
-                link="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
                 text="Agendar consulta"
                 styleClass="text-white border-1 border-white"
               />

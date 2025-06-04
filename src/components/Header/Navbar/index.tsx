@@ -1,8 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { WhatsAppContext } from "../../../context/WhatsAppContext";
 
 const Navbar = () => {
+  const { whatsAppUrl } = useContext(WhatsAppContext);
+
   const [isOpen, setIsOpen] = useState(false);
   const listRef = useRef<HTMLUListElement | null>(null);
   const navRef = useRef<HTMLElement | null>(null);
@@ -209,7 +212,7 @@ const Navbar = () => {
 
           <li>
             <a
-              href="https://wa.me/5541999901065?text=Oi%2C%20quero%20marcar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+              href={whatsAppUrl}
               target="_blank"
               rel="noopner noreferrer"
             >
