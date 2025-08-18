@@ -6,12 +6,15 @@ type WhatsAppProviderProps = {
 
 type WhatsAppContextProps = {
   whatsAppUrl: string;
+  whatsAppMessage: string;
 };
 
 const WhatsAppContext = createContext({} as WhatsAppContextProps);
 
 const WhatsAppProvider = ({ children }: WhatsAppProviderProps) => {
   const [whatsAppUrl, setWhatsAppUrl] = useState("");
+  const [whatsMessage, setWhatsMessage] = useState("");
+
   useEffect(() => {
     const params = window.location.search?.substring(1)?.split("&");
     let whatsAppUrl = "https://wa.me/5541999901065?text=";
@@ -58,13 +61,15 @@ const WhatsAppProvider = ({ children }: WhatsAppProviderProps) => {
       }
     }
 
-    setWhatsAppUrl(whatsAppUrl + encodeURIComponent(whatsAppMessage));
+    setWhatsMessage(encodeURIComponent(whatsAppMessage));
+    setWhatsAppUrl(whatsAppUrl);
   }, []);
 
   return (
     <WhatsAppContext.Provider
       value={{
         whatsAppUrl: whatsAppUrl,
+        whatsAppMessage: whatsMessage,
       }}
     >
       {children}

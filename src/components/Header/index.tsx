@@ -3,7 +3,7 @@ import RevealOnScroll from "../RevealOnScroll";
 
 import Navbar from "./Navbar";
 
-import "./index.css"
+import "./index.css";
 
 const Header = () => {
   return (
@@ -24,8 +24,17 @@ const Header = () => {
 
             <div className="flex justify-center flex-wrap gap-5 md:justify-start">
               <ButtonWhatsApp
-                text="Agendar consulta"
+                text="Agendamento Curitiba"
                 styleClass="text-white border-1 border-white"
+                ownUrl={true}
+                url="https://wa.me/5541999901065?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
+              />
+
+              <ButtonWhatsApp
+                text="Agendamento São Matheus"
+                styleClass="text-white border-1 border-white"
+                ownUrl={true}
+                url="https://wa.me/5542998546020?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
               />
             </div>
           </RevealOnScroll>

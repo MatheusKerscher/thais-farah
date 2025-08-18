@@ -6,8 +6,8 @@ import { useContext } from "react";
 import { WhatsAppContext } from "../../context/WhatsAppContext";
 
 const Contact = () => {
-  const { whatsAppUrl } = useContext(WhatsAppContext);
-  
+  const { whatsAppUrl, whatsAppMessage } = useContext(WhatsAppContext);
+
   return (
     <section id="contact" className="px-6 md:px-15 py-8 bg-secondary">
       <RevealOnScroll direction="down">
@@ -20,7 +20,7 @@ const Contact = () => {
         <RevealOnScroll direction="up">
           <a
             className="flex flex-col gap-2 items-center p-4 bg-primary rounded-2xl shadow-lg"
-            href={whatsAppUrl}
+            href={whatsAppUrl + whatsAppMessage}
             target="_blank"
             rel="noopner noreferrer"
           >
