@@ -31,7 +31,7 @@ const Header = () => {
               />
 
               <ButtonWhatsApp
-                text="Agendamento São Matheus"
+                text="Agendamento São Mateus"
                 styleClass="text-white border-1 border-white"
                 ownUrl={true}
                 url="https://wa.me/5542998546020?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra%20Tha%C3%ADs%20Farah!"
