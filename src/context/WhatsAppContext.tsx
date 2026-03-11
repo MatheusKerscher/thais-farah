@@ -39,19 +39,19 @@ const WhatsAppProvider = ({ children }: WhatsAppProviderProps) => {
       switch (campaignName) {
         case "cirurgia-intima":
           whatsAppMessage =
-            "Olá, Gostaria de agendar consulta com a Dra Thaís Farah, especialista em cirurgia íntima! ";
+            "Olá, vim do Google e gostaria de agendar consulta com a Dra Thaís Farah, especialista em cirurgia íntima! ";
 
           break;
 
         case "rotina":
           whatsAppMessage =
-            "Olá, Gostaria de agendar consulta ginecológica com a Dra Thaís Farah!";
+            "Olá, vim do Google e gostaria de agendar consulta ginecológica com a Dra Thaís Farah!";
 
           break;
 
         case "incontinencia-urinaria":
           whatsAppMessage =
-            "Olá, Gostaria de agendar consulta com a Dra Thaís Farah, especialista em incontinência urinária! ";
+            "Olá, vim do Google e gostaria de agendar consulta com a Dra Thaís Farah, especialista em incontinência urinária! ";
 
           break;
 
